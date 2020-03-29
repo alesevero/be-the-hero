@@ -2,6 +2,8 @@
 
 A Simple app created with node.js, ReactJS and React Native.
 
+![be-the-hero-page](./img/betheheropage.png)
+
 ## Table of Contents
 * [General info](#general-info)
 * [App Stack](#app-stack)
