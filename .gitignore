@@ -4077,3 +4077,4 @@ backend/node_modules/celebrate/lib/constants.js
 backend/node_modules/celebrate/lib/index.d.ts
 backend/node_modules/celebrate/lib/index.js
 backend/node_modules/celebrate/lib/schema.js
+backend/src/database/test.sqlite
