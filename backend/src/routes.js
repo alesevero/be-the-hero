@@ -1,5 +1,4 @@
 const express = require('express')
-const { celebrate, Segments, Joi } = require('celebrate')
 const OngController = require('./controller/OngController')
 const IncidentController = require('./controller/IncidentController')
 const ProfileController = require('./controller/ProfileController')
@@ -10,7 +9,7 @@ const ServiceValidator = require('./validator/ServiceValidator')
 const routes = express.Router()
 
 // ong id exists in header.authorization
-routes.get('/ongs/incidents', ServiceValidator.getIncidentsByOngValidator, ProfileController.index) 
+routes.get('/ongs/incidents', ServiceValidator.getIncidentsByOngValidator(), ProfileController.index) 
 routes.get('/ongs', OngController.index)
 routes.get('/incidents', ServiceValidator.getIncidentsValidator(), IncidentController.index)
 

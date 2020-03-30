@@ -2,7 +2,7 @@ const request = require('supertest')
 const app = require('../../src/app')
 const connection = require('../../src/database/connection')
 
-describe('Ong unit tests', () => {
+describe('Ong service integration tests', () => {
 
   beforeEach(async () => {
     await connection.migrate.rollback()
@@ -17,14 +17,13 @@ describe('Ong unit tests', () => {
     const response = await request(app)
       .post('/ongs')
       .send({
-        name: "APAD2",
-        email: "contato@fa.com",
-        whatsapp: "4100000000",
-        city: "Rio do Sul",
-        uf: "SC"
+        name: "Ong de Teste",
+        email: "teste@ong.com",
+        whatsapp: "51000000000",
+        city: "Porto Alegre",
+        uf: "RS"
     })
 
-    console.log(response.body)
     expect(response.body).toHaveProperty('id')
     expect(response.body.id).toHaveLength(8)
   })
