@@ -76,6 +76,6 @@ To run the mobile application, run (again, check `api.js` to change the backend 
 $ npm start
 ```
 
-In your smartphone, download the Expo client app. When the qrcode is shown in the terminal, open with your camera and run the application in your mobile devide.
+In your smartphone, download the Expo client app. When the qrcode is shown in the terminal, scan it with your camera and run the application in your mobile devide.
 
 __PS:__ Email composition and whatsapp integration do not work on simulators.
