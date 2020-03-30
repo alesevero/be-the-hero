@@ -48,6 +48,17 @@ To start the backend services, just run:
 
 ```
 $ npm install
+```
+
+After we install all dependencies needed, it's time to setup our sqlite3 database by running the migrations:
+
+```
+$ npx knex migrate:latest
+```
+
+And then, we start the services:
+
+```
 $ npm start
 ```
 
